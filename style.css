@@ -1,0 +1,155 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #F8F1FA;
+    color: #222;
+}
+
+.subhead{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+/* Navigation */
+.heading {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+    color: #FAF4A5;
+}
+
+nav {
+    background-color: #2D283E;
+    padding: 15px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: #CBA5F9;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Home */
+.home {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background-color: #E5D5F0;
+    padding: 50px 10%;
+}
+
+.home img {
+    width: 180px;
+    height: 200px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 0;
+    border: 4px solid black;
+}
+
+.home h1 {
+    color: #4C245E;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+/* Sections */
+section {
+    padding: 35px 10%;
+    background-color: #F8F1FA;
+}
+
+section h2 {
+    color: #4C245E;
+}
+
+
+/* Alternate Sections */
+
+#education,
+#interests {
+    background-color: #EEDDF5;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #38324F;
+    color: #E2C9FF;
+
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+/* Contact */
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-links a {
+    color: #802BB1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2D283E;
+    color: #FAF4A5;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+    }
+}
